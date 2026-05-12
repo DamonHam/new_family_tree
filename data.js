@@ -54,7 +54,7 @@ const people = [
     parents: [],
     spouse: ["dalton"]
   },
-  {
+  /*{
     id: "luna",
     name: "Luna Hammond",
     dob: "June 06, 2017",
@@ -64,7 +64,7 @@ const people = [
     photo: "luna.jpg",
     parents: ["dalton", "megan"],
     spouse: []
-  },
+  },*/
   {
     id: "kaden",
     name: "Kaden Hammond",
