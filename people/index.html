@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Person details</title>
+  <link rel="stylesheet" href="../style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <main class="person-page">
+    <a href="../index.html" class="back-link">&larr; Back to family list</a>
+
+    <section class="person-main">
+      <div class="person-photo-wrapper">
+        <img id="person-photo" alt="Person photo" />
+      </div>
+
+      <div class="person-main-text">
+        <h1 id="person-name"></h1>
+        <p id="person-dob"></p>
+        <p id="person-dod"></p>
+      </div>
+    </section>
+
+    <section class="person-section">
+      <h3>Parents</h3>
+      <ul id="person-parents"></ul>
+    </section>
+
+    <section class="person-section">
+      <h3>Spouse / Partner</h3>
+      <ul id="person-spouses"></ul>
+    </section>
+
+    <section class="person-section">
+      <h3>Children</h3>
+      <ul id="person-children"></ul>
+    </section>
+
+    <section class="person-section">
+      <h3>Siblings</h3>
+      <ul id="person-siblings"></ul>
+    </section>
+
+    <section class="person-section person-notes">
+      <h3 id="about-header">About</h3>
+      <div class="person-notes-card">
+        <p id="person-notes"></p>
+      </div>
+    </section>
+
+    <section class="person-section">
+      <h3>Sources</h3>
+      <ul id="person-sources"></ul>
+    </section>
+  </main>
+
+  <script src="../data.js"></script>
+  <script src="../people.js"></script>
+</body>
+</html>

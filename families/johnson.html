@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Johnson Family Tree</title>
+  <link rel="stylesheet" href="../style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <header class="site-header">
+    <a href="../index.html" class="back-link center-back">&larr; Back to family list</a>
+    <h1>Johnson Family Tree</h1>
+    <p class="subtitle">Starting with Bobby and Susan Johnson.</p>
+  </header>
+
+  <main>
+    <div class="tree-toolbar">
+      <button id="zoom-out" type="button">-</button>
+      <button id="zoom-reset" type="button">Reset</button>
+      <button id="zoom-in" type="button">+</button>
+    </div>
+
+    <div class="tree-wrapper">
+      <div class="tree" id="tree-canvas">
+        <ul id="tree-root"></ul>
+      </div>
+    </div>
+  </main>
+
+  <script src="../data.js"></script>
+  <script src="../tree.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      renderFamilyTree({
+        rootParents: ["bobby", "susan"],
+        containerId: "tree-root",
+        theme: "johnson"
+      });
+
+      setupTreeZoom("tree-canvas");
+    });
+  </script>
+</body>
+</html>
